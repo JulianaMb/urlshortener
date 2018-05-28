@@ -5,7 +5,7 @@ Container docker : localhost:8182.
 
 
 - localhost:8182/all (all urls in database)
-- using Postman or other, localhost:8182, HTTP Request type PUT, body the long url to shorten.
+- using Postman or other, localhost:8182, HTTP Request type PUT. In Request body inform the long url to shorten.
 - localhost:8182/331e5b6b 331e5b6b is the shorten url to https://www.google.com, this request will redirect to the url
 - localhost:8182/getCountAcesses/331e5b6b how many times this shorten url was acessed
 
@@ -18,6 +18,6 @@ Docker compose is used to create mongodb container before the api container.
 
 Next steps 
 
-1 - create tests
-2 - build front-end
-3 - more statistics
+1. create tests
+2. build front-end
+3. more statistics
