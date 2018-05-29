@@ -13,11 +13,16 @@ Container docker : localhost:8182.
 
 Docker container or image names can be changed inside DockerFile or docker-compose.yml
 
-Docker compose is used to create mongodb container before the api container.
+docker-compose is used to create mongodb container before the api container.
+
+The base image to create mongodb container is the official mongo found in Docker Hub
+The base image to create urlshortener container is openjdk:8-alpine
+
+If a container for mongo already exists, change the name in the dbsettings string on Dockerfile, some changes may be necessary in docker-compose too.
 
 
-Next steps 
+# Project Next steps 
 
-1. create tests
-2. build front-end
-3. more statistics
+1. Create tests
+2. Build front end
+3. More statistics
